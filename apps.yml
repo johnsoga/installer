@@ -1,0 +1,29 @@
+---
+- hosts: all
+
+  tasks:
+
+    - name: install applications via homebrew cask
+      homebrew_cask: name={{ item }} state=present
+      with_items:
+        - firefox
+        - xld
+        - vlc
+        - flux
+        - netbeans
+        - handbrake
+        # - mysqlworkbench
+        - the-unarchiver
+        - virtualbox
+        - vagrant
+        - vagrant-manager
+        - torbrowser
+        - github
+        - little-snitch
+        - google-chrome
+        - iterm2
+        - musicbrainz-picard
+        - java
+        - atom
+      environment:
+        HOMEBREW_CASK_OPTS: --appdir=/Applications
