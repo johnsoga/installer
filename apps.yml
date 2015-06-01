@@ -25,5 +25,6 @@
         - musicbrainz-picard
         - java
         - atom
+        - packer
       environment:
         HOMEBREW_CASK_OPTS: --appdir=/Applications
