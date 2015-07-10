@@ -10,6 +10,7 @@
         - flux
         - netbeans
         - handbrake
+        #- sequel-pro
         - mysqlworkbench
         - the-unarchiver
         - virtualbox
@@ -31,3 +32,4 @@
       homebrew: name={{ item }} state=present
       with_items:
         - pv
+        - mysql
