@@ -183,6 +183,15 @@ sudo mdutil -E / > /dev/null
 sudo defaults write /Library/Preferences/com.apple.alf globalstate -int 1
 
 ###############################################################################
+# Sharing                                                                     #
+###############################################################################
+
+#Disable Handoff to Devices
+pfile="$(basename "$(find ~/Library/Preferences -type f -name "com.apple.coreservices.lsuseractivityd*")")"
+defaults write ~/Library/Preferences/ByHost/"$pfile" ActivityAdvertisingAllowed -bool false
+defaults write ~/Library/Preferences/ByHost/"$pfile" ActivityReceivingAllowed -bool false
+
+###############################################################################
 # Reboot to apply changes                                                     #
 ###############################################################################
 sudo shutdown -r now
