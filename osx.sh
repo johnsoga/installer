@@ -32,7 +32,8 @@ if [[ ! $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
 echo "Aborting..."; exit
 fi
 if [[ ! $(which ansible) ]]; then
-	brew install ansible
+	sudo easy_install pip
+	sudo pip install ansible
     if [[ ! $(which ansible) ]]; then
         printf "Failed to install Ansible... Aborting...\n"; exit
     else
