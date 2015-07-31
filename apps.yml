@@ -7,7 +7,7 @@
         - firefox
         - xld
         - vlc
-        - flux
+        #- flux
         - netbeans
         - handbrake
         #- sequel-pro
