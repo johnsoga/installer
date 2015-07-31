@@ -29,7 +29,7 @@
         HOMEBREW_CASK_OPTS: --appdir=/Applications
 
     - name: install brew applications
-      homebrew: name={{ item }} state=present
+      homebrew: name={{ item }} state=latest
       with_items:
         - pv
         - mysql
