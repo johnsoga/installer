@@ -144,6 +144,7 @@ defaults write com.apple.dock magnification -int 0
 # Spotlight                                                                   #
 ###############################################################################
 
+defaults write com.apple.lookup lookupEnabled -dict-add suggestionsEnabled -bool no
 defaults write com.apple.spotlight orderedItems -array \
 	'{"enabled" = 1;"name" = "APPLICATIONS";}' \
 	'{"enabled" = 0;"name" = "MENU_SPOTLIGHT_SUGGESTIONS";}' \
