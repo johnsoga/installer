@@ -8,6 +8,7 @@
         - xld
         - vlc
         #- flux
+        - java
         - netbeans
         - handbrake
         #- sequel-pro
@@ -22,7 +23,6 @@
         - google-chrome
         - iterm2
         - musicbrainz-picard
-        - java
         - atom
         - packer
       environment:
