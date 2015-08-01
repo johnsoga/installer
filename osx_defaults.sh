@@ -151,7 +151,7 @@ defaults write com.apple.spotlight orderedItems -array \
 	'{"enabled" = 0;"name" = "MENU_CONVERSION";}' \
 	'{"enabled" = 1;"name" = "MENU_EXPRESSION";}' \
 	'{"enabled" = 1;"name" = "MENU_DEFINITION";}' \
-	'{"enabled" = 1;"name" = "SYSTEM_PREFS";}' \
+	'{"enabled" = 0;"name" = "SYSTEM_PREFS";}' \
 	'{"enabled" = 1;"name" = "DOCUMENTS";}' \
 	'{"enabled" = 1;"name" = "DIRECTORIES";}' \
 	'{"enabled" = 0;"name" = "PRESENTATIONS";}' \
@@ -195,4 +195,4 @@ defaults write ~/Library/Preferences/ByHost/"$pfile" ActivityReceivingAllowed -b
 ###############################################################################
 # Reboot to apply changes                                                     #
 ###############################################################################
-sudo shutdown -r now
+sudo shutdown now
