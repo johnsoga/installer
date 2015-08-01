@@ -71,13 +71,14 @@ printf "Files Linked\n"
 read -r -p "Install Applications? [y/N] " response
 if [[ ! $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
 echo "Aborting..."; exit
-fi
+else
 ansible-playbook apps.yml
+fi
 
 
+### Setup Atom
+./atom_setup.sh
 
-## Setup Atom
-#./atom_setup.sh
-#
-## Setup OSX Preferences; Done last since it triggers a restart
-#./osx_defaults.sh
+
+### Setup OSX Preferences; Done last since it triggers a restart
+./osx_defaults.sh
