@@ -33,3 +33,4 @@
       with_items:
         - pv
         - mysql
+        - pigz
